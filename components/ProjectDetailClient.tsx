@@ -5,8 +5,7 @@ import Link from "next/link";
 import { useRole } from "@/lib/role";
 import { Badge, StatusBadge } from "@/components/ui/Badge";
 import { StatTile } from "@/components/ui/StatTile";
-import { ArchFrame } from "@/components/ornaments/ArchFrame";
-import { GirihPattern } from "@/components/ornaments/GirihPattern";
+import { ProjectImage, sceneForCategory } from "@/components/ProjectImage";
 import { PledgeDialog } from "@/components/PledgeDialog";
 import {
   formatCompact,
@@ -33,15 +32,12 @@ export function ProjectDetailClient({ initial }: { initial: Project }) {
     <div className="container-page grid gap-6 py-6 lg:grid-cols-3 lg:py-10">
       {/* Main column */}
       <article className="space-y-6 lg:col-span-2">
-        <div
-          className="arch-thumb relative h-44 w-full overflow-hidden md:h-56"
-          style={{
-            background: `linear-gradient(155deg, hsl(${175 + (project.imageHue % 45)} 55% 50%) 0%, hsl(${(175 + (project.imageHue % 45) + 25) % 360} 60% 28%) 100%)`,
-          }}
-        >
-          <GirihPattern className="absolute inset-0 h-full w-full text-gold opacity-20" />
-          <ArchFrame className="absolute inset-0 h-full w-full text-gold/70" />
-        </div>
+        <ProjectImage
+          scene={sceneForCategory(project.category)}
+          hue={project.imageHue}
+          image={project.image}
+          className="arch-thumb h-44 w-full md:h-56"
+        />
 
         <header className="space-y-2">
           <div className="flex flex-wrap items-center gap-2">
@@ -87,6 +83,7 @@ export function ProjectDetailClient({ initial }: { initial: Project }) {
             <PledgeDialog
               goal={project.goal}
               committed={project.committed}
+              projectTitle={project.title}
               onCommit={commit}
             />
           ) : role === "manager" ? (

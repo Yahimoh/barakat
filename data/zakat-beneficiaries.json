@@ -1,42 +1,42 @@
 [
   {
     "id": "z-001",
-    "name": "Saffron Farmers in Hardship",
+    "name": "Families Below the Nisab — Helsinki",
     "category": "The poor (al-Fuqarā)",
-    "description": "Direct relief for smallholder farming families who fell below the nisab after a failed harvest.",
+    "description": "Direct relief for local families whose income falls below the nisab, verified with community mosques.",
     "imageHue": 188
   },
   {
     "id": "z-002",
-    "name": "Widows & Orphans Fund — Mashhad",
+    "name": "Widows & Orphans Fund — Finland",
     "category": "The needy (al-Masākīn)",
-    "description": "Monthly essentials for households with no breadwinner.",
+    "description": "Monthly essentials for households in the community with no breadwinner.",
     "imageHue": 200
   },
   {
     "id": "z-003",
-    "name": "Debt Relief Circle",
+    "name": "Debt Relief for Local Families",
     "category": "Those in debt (al-Ghārimīn)",
-    "description": "Clears urgent, interest-free debts for people who cannot repay.",
+    "description": "Clears urgent, riba-free debts for people who cannot repay.",
     "imageHue": 178
   },
   {
     "id": "z-004",
-    "name": "Stranded Travellers Aid",
+    "name": "Stranded Students & Travellers",
     "category": "The wayfarer (Ibn al-Sabīl)",
-    "description": "Shelter and passage home for travellers cut off from their means.",
+    "description": "Shelter and support for students and travellers cut off from their means.",
     "imageHue": 210
   },
   {
     "id": "z-005",
-    "name": "New Muslim Support",
+    "name": "New Muslim Support — Finland",
     "category": "Reconciliation of hearts (Mu'allafat al-Qulūb)",
-    "description": "Settling-in support and community for recent converts.",
+    "description": "Settling-in support and community for recent converts across Finland.",
     "imageHue": 195
   },
   {
     "id": "z-006",
-    "name": "Skills & Livelihood Grants",
+    "name": "Livelihood & Skills Grants",
     "category": "The needy (al-Masākīn)",
     "description": "Tools and training so families can earn above the nisab next year.",
     "imageHue": 172

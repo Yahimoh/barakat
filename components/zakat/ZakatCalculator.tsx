@@ -81,7 +81,7 @@ export function ZakatCalculator({
                 </label>
                 <div className="relative w-40 shrink-0">
                   <span className="pointer-events-none absolute inset-y-0 start-3 flex items-center text-sm text-muted">
-                    $
+                    €
                   </span>
                   <input
                     id={`z-${f.key}`}

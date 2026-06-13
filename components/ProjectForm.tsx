@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/Button";
+import { ProjectImage, sceneForCategory } from "./ProjectImage";
 import type { Project, ProjectCategory } from "@/types";
 
 const categories: ProjectCategory[] = [
@@ -103,7 +104,7 @@ export function ProjectForm({ initial, mode }: ProjectFormProps) {
           </select>
         </Field>
 
-        <Field label="Goal (USD)">
+        <Field label="Goal (EUR)">
           <input
             type="number"
             min={1000}
@@ -126,11 +127,10 @@ export function ProjectForm({ initial, mode }: ProjectFormProps) {
         </Field>
       </div>
 
-      <div
+      <ProjectImage
+        scene={sceneForCategory(form.category)}
+        hue={form.imageHue}
         className="arch-thumb h-24 w-full"
-        style={{
-          background: `linear-gradient(160deg, hsl(${form.imageHue} 45% 78%) 0%, hsl(${(form.imageHue + 30) % 360} 35% 55%) 100%)`,
-        }}
       />
 
       <div className="flex gap-2">

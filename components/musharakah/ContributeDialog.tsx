@@ -73,7 +73,7 @@ export function ContributeDialog({
               htmlFor="contribute-amount"
               className="mt-4 block text-sm font-medium text-ink"
             >
-              Amount (USD)
+              Amount (EUR)
             </label>
             <input
               id="contribute-amount"

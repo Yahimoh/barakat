@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRole } from "@/lib/role";
 import { RoleSwitcher } from "./RoleSwitcher";
-import { EightPointStar } from "./ornaments/EightPointStar";
 
 const navItems = [
   { href: "/projects", label: "Browse" },
@@ -32,11 +31,16 @@ export function Header() {
       <div className="gold-rule absolute inset-x-0 bottom-0" />
       <div className="container-page flex h-16 items-center justify-between gap-3">
         <Link href="/" className="group flex items-center gap-2">
-          <EightPointStar className="h-6 w-6 text-turquoise transition-transform duration-500 group-hover:rotate-45" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt="Barakat"
+            className="h-9 w-9 transition-transform duration-500 group-hover:rotate-45"
+          />
           <span className="font-display text-lg font-semibold text-emerald-deep">
             Barakat
           </span>
-          <span className="hidden text-xs text-gold-deep sm:inline">برکت</span>
+          <span className="hidden text-xs text-gold-deep sm:inline">برکة</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

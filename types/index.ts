@@ -22,6 +22,7 @@ export interface Project {
   backers: number;
   createdAt: string; // ISO
   imageHue: number; // 0-360
+  image?: string; // optional real photo URL (e.g. "/projects/turku-lamb.jpg")
 }
 
 export interface Commitment {
@@ -83,6 +84,7 @@ export interface SadaqahProject {
   goal: number;
   donors: number;
   imageHue: number;
+  image?: string; // optional real photo URL
 }
 
 export interface Pool {
