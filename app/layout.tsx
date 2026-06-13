@@ -18,9 +18,9 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "Barakat — Invest with blessing",
+  title: "Barakat — Invest together. Grow together.",
   description:
-    "A Klarna-style investment marketplace, themed with Iranian Islamic colors and shapes.",
+    "Local investment circles for Muslims in Finland — pool your money, choose as a community, and back the halal businesses around you.",
 };
 
 export default function RootLayout({
@@ -30,8 +30,8 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="fa"
-      dir="rtl"
+      lang="en"
+      dir="ltr"
       className={`${inter.variable} ${vazirmatn.variable}`}
     >
       <body className="min-h-screen pb-20 md:pb-0">

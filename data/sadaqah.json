@@ -1,9 +1,9 @@
 [
   {
     "id": "s-001",
-    "title": "Clean Water Wells — Sistan",
-    "summary": "Hand-dug wells and solar pumps for drought-hit villages in south-east Iran.",
-    "category": "Water",
+    "title": "Winter Support for Newcomer Families",
+    "summary": "Warm coats, boots, and heating help for refugee and newcomer families through the Finnish winter.",
+    "category": "Families",
     "raised": 18400,
     "goal": 30000,
     "donors": 212,
@@ -11,8 +11,8 @@
   },
   {
     "id": "s-002",
-    "title": "Orphan Sponsorship — Mashhad",
-    "summary": "Education, meals and care for 40 children for a full school year.",
+    "title": "Orphan & Youth Sponsorship — Finland",
+    "summary": "Education, meals, and mentoring for children in the community for a full school year.",
     "category": "Children",
     "raised": 27300,
     "goal": 40000,
@@ -21,8 +21,8 @@
   },
   {
     "id": "s-003",
-    "title": "Winter Food Packs",
-    "summary": "Staple food parcels delivered to families before the cold season.",
+    "title": "Ramadan Food Parcels — Tampere",
+    "summary": "Staple food boxes delivered to families in need before and during Ramadan.",
     "category": "Food",
     "raised": 9600,
     "goal": 12000,
@@ -31,9 +31,9 @@
   },
   {
     "id": "s-004",
-    "title": "Restore the Blue Mosque Courtyard",
-    "summary": "Conserving heritage tilework and reopening the courtyard to the community.",
-    "category": "Heritage",
+    "title": "Espoo Islamic Centre Expansion",
+    "summary": "Help expand the prayer hall and youth space serving a growing congregation.",
+    "category": "Community",
     "raised": 41200,
     "goal": 90000,
     "donors": 503,

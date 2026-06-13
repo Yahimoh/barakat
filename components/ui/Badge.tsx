@@ -35,17 +35,23 @@ export function Badge({
   );
 }
 
-export function StatusBadge({ status }: { status: string }) {
+export function StatusBadge({
+  status,
+  className = "",
+}: {
+  status: string;
+  className?: string;
+}) {
   switch (status) {
     case "validated":
-      return <Badge tone="emerald">● Validated</Badge>;
+      return <Badge tone="emerald" className={className}>● Validated</Badge>;
     case "pending":
-      return <Badge tone="gold">● Pending review</Badge>;
+      return <Badge tone="gold" className={className}>● Pending review</Badge>;
     case "draft":
-      return <Badge tone="muted">● Draft</Badge>;
+      return <Badge tone="muted" className={className}>● Draft</Badge>;
     case "closed":
-      return <Badge tone="navy">● Closed</Badge>;
+      return <Badge tone="navy" className={className}>● Closed</Badge>;
     default:
-      return <Badge tone="muted">{status}</Badge>;
+      return <Badge tone="muted" className={className}>{status}</Badge>;
   }
 }

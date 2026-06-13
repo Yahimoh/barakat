@@ -1,7 +1,7 @@
 /**
  * Pure Zakat math. Zakat is due at 2.5% of net zakatable wealth, but only if
  * that wealth meets the nisab threshold (the minimum, pegged to gold or
- * silver). The USD nisab values are demo estimates — they track live metal
+ * silver). The EUR nisab values are demo estimates — they track live metal
  * prices in reality.
  */
 export const ZAKAT_RATE = 0.025;

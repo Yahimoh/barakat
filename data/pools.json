@@ -1,9 +1,9 @@
 [
   {
     "id": "pool-001",
-    "name": "Isfahan Makers' Circle",
-    "arabicName": "مشارکه",
-    "description": "A circle of craft-minded investors pooling capital to back one workshop this season. Contributions are closed — cast your weighted vote to decide where the pot goes.",
+    "name": "Helsinki Makers' Circle",
+    "arabicName": "مشارکة",
+    "description": "A circle of Helsinki neighbours pooling capital to back one local halal business this season. Contributions are closed — cast your weighted vote to decide where the pot goes.",
     "status": "voting",
     "minContribution": 250,
     "createdAt": "2026-04-10T00:00:00Z",
@@ -24,9 +24,9 @@
   },
   {
     "id": "pool-002",
-    "name": "Shiraz Growth Pool",
-    "arabicName": "مشارکه",
-    "description": "An open partnership gathering funds for a green-energy or agriculture bet. Add your contribution now — the more you commit, the more your vote counts when voting opens.",
+    "name": "Turku Growth Circle",
+    "arabicName": "مشارکة",
+    "description": "An open partnership of Turku families gathering funds to back a community business. Add your contribution now — the more you commit, the more your vote counts when voting opens.",
     "status": "open",
     "minContribution": 100,
     "createdAt": "2026-05-28T00:00:00Z",
@@ -41,9 +41,9 @@
   },
   {
     "id": "pool-003",
-    "name": "Tabriz Heritage Fund",
-    "arabicName": "مشارکه",
-    "description": "A completed Musharakah. The members voted, weighted by contribution, and the entire pot was invested into the winning project.",
+    "name": "Tampere Community Fund",
+    "arabicName": "مشارکة",
+    "description": "A completed Musharakah. The Tampere circle voted, weighted by contribution, and the entire pot was invested into the winning business.",
     "status": "invested",
     "minContribution": 500,
     "createdAt": "2026-01-05T00:00:00Z",

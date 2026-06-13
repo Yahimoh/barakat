@@ -8,7 +8,7 @@ import { StatTile } from "@/components/ui/StatTile";
 import { Button } from "@/components/ui/Button";
 import { GirihPattern } from "@/components/ornaments/GirihPattern";
 import { EightPointStar } from "@/components/ornaments/EightPointStar";
-import { ArchFrame } from "@/components/ornaments/ArchFrame";
+import { ProjectImage, sceneForCategory } from "@/components/ProjectImage";
 import { ContributeDialog } from "./ContributeDialog";
 import { MemberShareBar } from "./MemberShareBar";
 import { VoteResults } from "./VoteResults";
@@ -296,7 +296,6 @@ function CandidateCard({
   canVote: boolean;
   onVote: () => void;
 }) {
-  const hue = 175 + (project.imageHue % 45);
   return (
     <div
       className={[
@@ -308,19 +307,18 @@ function CandidateCard({
             : "border-muted/15",
       ].join(" ")}
     >
-      <div
-        className="relative h-20"
-        style={{
-          background: `linear-gradient(155deg, hsl(${hue} 55% 50%), hsl(${(hue + 25) % 360} 60% 28%))`,
-        }}
+      <ProjectImage
+        scene={sceneForCategory(project.category)}
+        hue={project.imageHue}
+        image={project.image}
+        className="h-20"
       >
-        <ArchFrame className="absolute inset-0 h-full w-full text-gold/60" />
         {isWinner && (
           <span className="absolute right-2 top-2 rounded-full bg-gold px-2 py-0.5 text-[10px] font-semibold text-ink">
             ★ Funded
           </span>
         )}
-      </div>
+      </ProjectImage>
       <div className="space-y-2 p-3">
         <div className="flex items-start justify-between gap-2">
           <h4 className="font-display text-sm font-semibold leading-snug text-ink">
