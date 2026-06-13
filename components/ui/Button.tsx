@@ -12,10 +12,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-emerald text-ivory hover:bg-emerald-light focus-visible:ring-emerald",
+    "bg-gradient-to-br from-turquoise to-lapis text-ivory shadow-card hover:shadow-glow hover:brightness-110 focus-visible:ring-turquoise",
   secondary:
-    "bg-ivory text-emerald border border-emerald hover:bg-emerald/5 focus-visible:ring-emerald",
-  ghost: "bg-transparent text-emerald hover:bg-emerald/5 focus-visible:ring-emerald",
+    "bg-white text-emerald-deep border border-turquoise/40 hover:border-turquoise hover:bg-turquoise/5 focus-visible:ring-turquoise",
+  ghost:
+    "bg-transparent text-emerald hover:bg-turquoise/10 focus-visible:ring-turquoise",
   danger:
     "bg-crimson text-ivory hover:bg-crimson-light focus-visible:ring-crimson",
 };
@@ -38,8 +39,8 @@ export function Button({
     <button
       className={[
         "inline-flex items-center justify-center gap-2 rounded-md font-medium",
-        "transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ivory",
-        "disabled:opacity-50 disabled:pointer-events-none",
+        "transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ivory",
+        "active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none",
         variants[variant],
         sizes[size],
         fullWidth ? "w-full" : "",

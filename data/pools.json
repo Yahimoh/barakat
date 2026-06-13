@@ -1,0 +1,66 @@
+[
+  {
+    "id": "pool-001",
+    "name": "Isfahan Makers' Circle",
+    "arabicName": "مشارکه",
+    "description": "A circle of craft-minded investors pooling capital to back one workshop this season. Contributions are closed — cast your weighted vote to decide where the pot goes.",
+    "status": "voting",
+    "minContribution": 250,
+    "createdAt": "2026-04-10T00:00:00Z",
+    "votingClosesAt": "2026-06-20T00:00:00Z",
+    "members": [
+      { "id": "i-001", "name": "Sara Mehrabi", "contribution": 3200 },
+      { "id": "i-101", "name": "Daniyal Rostami", "contribution": 5000 },
+      { "id": "i-102", "name": "Leyla Hosseini", "contribution": 1500 },
+      { "id": "i-103", "name": "Omid Karimi", "contribution": 2800 },
+      { "id": "i-104", "name": "Niloofar Ahmadi", "contribution": 900 }
+    ],
+    "candidateProjectIds": ["p-002", "p-007", "p-001"],
+    "votes": [
+      { "memberId": "i-101", "projectId": "p-002" },
+      { "memberId": "i-102", "projectId": "p-007" },
+      { "memberId": "i-103", "projectId": "p-002" }
+    ]
+  },
+  {
+    "id": "pool-002",
+    "name": "Shiraz Growth Pool",
+    "arabicName": "مشارکه",
+    "description": "An open partnership gathering funds for a green-energy or agriculture bet. Add your contribution now — the more you commit, the more your vote counts when voting opens.",
+    "status": "open",
+    "minContribution": 100,
+    "createdAt": "2026-05-28T00:00:00Z",
+    "votingClosesAt": "2026-07-15T00:00:00Z",
+    "members": [
+      { "id": "i-001", "name": "Sara Mehrabi", "contribution": 750 },
+      { "id": "i-105", "name": "Arman Tabatabai", "contribution": 2000 },
+      { "id": "i-106", "name": "Donya Sadeghi", "contribution": 1100 }
+    ],
+    "candidateProjectIds": ["p-003", "p-004", "p-008", "p-009"],
+    "votes": []
+  },
+  {
+    "id": "pool-003",
+    "name": "Tabriz Heritage Fund",
+    "arabicName": "مشارکه",
+    "description": "A completed Musharakah. The members voted, weighted by contribution, and the entire pot was invested into the winning project.",
+    "status": "invested",
+    "minContribution": 500,
+    "createdAt": "2026-01-05T00:00:00Z",
+    "votingClosesAt": "2026-03-01T00:00:00Z",
+    "members": [
+      { "id": "i-001", "name": "Sara Mehrabi", "contribution": 2000 },
+      { "id": "i-107", "name": "Kaveh Norouzi", "contribution": 6500 },
+      { "id": "i-108", "name": "Mahsa Eskandari", "contribution": 3000 },
+      { "id": "i-109", "name": "Reza Jafari", "contribution": 1500 }
+    ],
+    "candidateProjectIds": ["p-006", "p-005"],
+    "votes": [
+      { "memberId": "i-001", "projectId": "p-006" },
+      { "memberId": "i-107", "projectId": "p-006" },
+      { "memberId": "i-108", "projectId": "p-005" },
+      { "memberId": "i-109", "projectId": "p-006" }
+    ],
+    "winningProjectId": "p-006"
+  }
+]

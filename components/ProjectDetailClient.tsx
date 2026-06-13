@@ -6,6 +6,7 @@ import { useRole } from "@/lib/role";
 import { Badge, StatusBadge } from "@/components/ui/Badge";
 import { StatTile } from "@/components/ui/StatTile";
 import { ArchFrame } from "@/components/ornaments/ArchFrame";
+import { GirihPattern } from "@/components/ornaments/GirihPattern";
 import { PledgeDialog } from "@/components/PledgeDialog";
 import {
   formatCompact,
@@ -35,10 +36,11 @@ export function ProjectDetailClient({ initial }: { initial: Project }) {
         <div
           className="arch-thumb relative h-44 w-full overflow-hidden md:h-56"
           style={{
-            background: `linear-gradient(160deg, hsl(${project.imageHue} 45% 78%) 0%, hsl(${(project.imageHue + 30) % 360} 35% 55%) 100%)`,
+            background: `linear-gradient(155deg, hsl(${175 + (project.imageHue % 45)} 55% 50%) 0%, hsl(${(175 + (project.imageHue % 45) + 25) % 360} 60% 28%) 100%)`,
           }}
         >
-          <ArchFrame className="absolute inset-0 h-full w-full text-emerald-deep" />
+          <GirihPattern className="absolute inset-0 h-full w-full text-gold opacity-20" />
+          <ArchFrame className="absolute inset-0 h-full w-full text-gold/70" />
         </div>
 
         <header className="space-y-2">

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "s-001",
+    "title": "Clean Water Wells — Sistan",
+    "summary": "Hand-dug wells and solar pumps for drought-hit villages in south-east Iran.",
+    "category": "Water",
+    "raised": 18400,
+    "goal": 30000,
+    "donors": 212,
+    "imageHue": 195
+  },
+  {
+    "id": "s-002",
+    "title": "Orphan Sponsorship — Mashhad",
+    "summary": "Education, meals and care for 40 children for a full school year.",
+    "category": "Children",
+    "raised": 27300,
+    "goal": 40000,
+    "donors": 389,
+    "imageHue": 205
+  },
+  {
+    "id": "s-003",
+    "title": "Winter Food Packs",
+    "summary": "Staple food parcels delivered to families before the cold season.",
+    "category": "Food",
+    "raised": 9600,
+    "goal": 12000,
+    "donors": 156,
+    "imageHue": 180
+  },
+  {
+    "id": "s-004",
+    "title": "Restore the Blue Mosque Courtyard",
+    "summary": "Conserving heritage tilework and reopening the courtyard to the community.",
+    "category": "Heritage",
+    "raised": 41200,
+    "goal": 90000,
+    "donors": 503,
+    "imageHue": 188
+  }
+]

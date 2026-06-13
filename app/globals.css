@@ -9,10 +9,24 @@
     /* Body text in LTR by default, layout flips to RTL via <html dir="rtl"> */
   }
 
+  /* Warm, faintly tiled paper so the cream background reads like glazed stone. */
+  body {
+    background-color: #f6f1e4;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(11, 46, 90, 0.05) 1px, transparent 0),
+      radial-gradient(circle at 16px 16px, rgba(23, 166, 184, 0.04) 1px, transparent 0);
+    background-size: 32px 32px;
+    background-attachment: fixed;
+  }
+
   h1,
   h2,
   h3 {
     @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    background: rgba(23, 166, 184, 0.25);
   }
 }
 
@@ -21,8 +35,71 @@
     @apply mx-auto w-full max-w-6xl px-4 md:px-6 lg:px-8;
   }
 
+  /* Pointed-arch (mihrab) thumbnail mask. */
   .arch-thumb {
     border-radius: 50% 50% 0 0 / 18% 18% 0 0;
     overflow: hidden;
+  }
+
+  /* Deep dome gradient used behind hero / feature panels. */
+  .bg-dome {
+    background: radial-gradient(
+      120% 90% at 50% 0%,
+      #17a6b8 0%,
+      #1e5ba8 38%,
+      #0b2e5a 72%,
+      #071f40 100%
+    );
+  }
+
+  /* A thin saffron filigree rule that fades at both ends. */
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 165, 55, 0.65) 20%,
+      rgba(236, 201, 113, 0.9) 50%,
+      rgba(212, 165, 55, 0.65) 80%,
+      transparent
+    );
+  }
+
+  /* Saffron gradient text for small eyebrow / accent labels. */
+  .text-gold-gradient {
+    background: linear-gradient(100deg, #9c7320, #ecc971 45%, #d4a537);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Tile-band hover sheen — pair with .animate-sheen for a moving gleam. */
+  .sheen-strip {
+    background: linear-gradient(
+      110deg,
+      transparent 30%,
+      rgba(236, 201, 113, 0.55) 50%,
+      transparent 70%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+@layer utilities {
+  /* Stagger helpers for entrance animations on grids. */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+}
+
+/* Respect users who prefer reduced motion: hold everything still. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
