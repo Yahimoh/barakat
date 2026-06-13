@@ -84,10 +84,10 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "rounded-full border px-3 py-1 text-xs transition-colors",
+        "rounded-full border px-3.5 py-1 text-xs capitalize transition-all",
         active
-          ? "border-emerald bg-emerald text-ivory"
-          : "border-muted/30 bg-white text-ink hover:border-emerald/50",
+          ? "border-transparent bg-gradient-to-br from-turquoise to-lapis text-ivory shadow-sm"
+          : "border-muted/30 bg-white text-ink hover:border-turquoise/50 hover:text-turquoise-deep",
       ].join(" ")}
     >
       {children}

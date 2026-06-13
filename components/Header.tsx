@@ -25,14 +25,16 @@ export function Header() {
         : { href: "/projects", label: "Browse projects" };
 
   return (
-    <header className="sticky top-0 z-30 border-b border-muted/15 bg-ivory/85 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-gold/20 bg-ivory/80 backdrop-blur-md">
+      {/* Saffron filigree hairline under the bar. */}
+      <div className="gold-rule absolute inset-x-0 bottom-0" />
       <div className="container-page flex h-16 items-center justify-between gap-3">
-        <Link href="/" className="flex items-center gap-2">
-          <EightPointStar className="h-6 w-6 text-emerald" />
+        <Link href="/" className="group flex items-center gap-2">
+          <EightPointStar className="h-6 w-6 text-turquoise transition-transform duration-500 group-hover:rotate-45" />
           <span className="font-display text-lg font-semibold text-emerald-deep">
             Barakat
           </span>
-          <span className="hidden text-xs text-muted sm:inline">برکت</span>
+          <span className="hidden text-xs text-gold-deep sm:inline">برکت</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -43,10 +45,11 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={[
-                  "rounded-md px-3 py-2 text-sm transition-colors",
+                  "relative rounded-md px-3 py-2 text-sm transition-colors",
+                  "after:absolute after:inset-x-3 after:-bottom-px after:h-0.5 after:rounded-full after:bg-gold after:transition-transform after:duration-300",
                   active
-                    ? "text-emerald font-medium"
-                    : "text-ink hover:text-emerald",
+                    ? "text-turquoise-deep font-medium after:scale-x-100"
+                    : "text-ink hover:text-turquoise after:scale-x-0 hover:after:scale-x-100",
                 ].join(" ")}
               >
                 {item.label}
