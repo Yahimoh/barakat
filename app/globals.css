@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-ivory text-ink font-sans;
+    /* Body text in LTR by default, layout flips to RTL via <html dir="rtl"> */
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 md:px-6 lg:px-8;
+  }
+
+  .arch-thumb {
+    border-radius: 50% 50% 0 0 / 18% 18% 0 0;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "i-001",
+  "name": "Sara Mehrabi",
+  "email": "sara@example.com",
+  "joinedAt": "2025-06-01T00:00:00Z",
+  "commitments": [
+    { "id": "c-1", "projectId": "p-001", "amount": 500, "createdAt": "2025-11-04T00:00:00Z" },
+    { "id": "c-2", "projectId": "p-005", "amount": 1200, "createdAt": "2026-01-19T00:00:00Z" },
+    { "id": "c-3", "projectId": "p-007", "amount": 300, "createdAt": "2026-02-22T00:00:00Z" }
+  ]
+}
