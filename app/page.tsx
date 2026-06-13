@@ -162,6 +162,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Musharakah teaser */}
+      <section className="container-page">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-lapis via-turquoise-deep to-azure-deep p-6 text-ivory shadow-glow md:p-10">
+          <GirihPattern className="absolute -left-10 -top-10 h-56 w-56 animate-spin-slow text-gold opacity-15" />
+          <div className="relative flex flex-col items-start gap-5 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-xl">
+              <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-3 py-1 text-xs text-gold-light backdrop-blur">
+                <EightPointStar className="h-3.5 w-3.5 text-gold-light" />
+                <span>مشارکه — Musharakah</span>
+              </div>
+              <h2 className="font-display text-2xl font-semibold md:text-3xl">
+                Invest together, decide together.
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-ivory/85">
+                Pool capital into a shared pot with a circle of investors, then
+                vote on the one project to back — every vote weighted by what
+                you put in.
+              </p>
+            </div>
+            <Link
+              href="/musharakah"
+              className="inline-flex h-12 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-gold to-gold-deep px-6 text-sm font-medium text-ink shadow-card transition-all hover:brightness-105 active:scale-[0.98]"
+            >
+              Explore circles
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <ArabesqueDivider className="mx-auto h-3 w-48 text-gold-deep" />
 
       <footer className="container-page pb-8 text-center text-xs text-muted">

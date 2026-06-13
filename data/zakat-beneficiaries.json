@@ -1,0 +1,44 @@
+[
+  {
+    "id": "z-001",
+    "name": "Saffron Farmers in Hardship",
+    "category": "The poor (al-Fuqarā)",
+    "description": "Direct relief for smallholder farming families who fell below the nisab after a failed harvest.",
+    "imageHue": 188
+  },
+  {
+    "id": "z-002",
+    "name": "Widows & Orphans Fund — Mashhad",
+    "category": "The needy (al-Masākīn)",
+    "description": "Monthly essentials for households with no breadwinner.",
+    "imageHue": 200
+  },
+  {
+    "id": "z-003",
+    "name": "Debt Relief Circle",
+    "category": "Those in debt (al-Ghārimīn)",
+    "description": "Clears urgent, interest-free debts for people who cannot repay.",
+    "imageHue": 178
+  },
+  {
+    "id": "z-004",
+    "name": "Stranded Travellers Aid",
+    "category": "The wayfarer (Ibn al-Sabīl)",
+    "description": "Shelter and passage home for travellers cut off from their means.",
+    "imageHue": 210
+  },
+  {
+    "id": "z-005",
+    "name": "New Muslim Support",
+    "category": "Reconciliation of hearts (Mu'allafat al-Qulūb)",
+    "description": "Settling-in support and community for recent converts.",
+    "imageHue": 195
+  },
+  {
+    "id": "z-006",
+    "name": "Skills & Livelihood Grants",
+    "category": "The needy (al-Masākīn)",
+    "description": "Tools and training so families can earn above the nisab next year.",
+    "imageHue": 172
+  }
+]

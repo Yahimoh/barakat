@@ -8,6 +8,8 @@ import { EightPointStar } from "./ornaments/EightPointStar";
 
 const navItems = [
   { href: "/projects", label: "Browse" },
+  { href: "/musharakah", label: "Circles" },
+  { href: "/give", label: "Give" },
   { href: "/investor", label: "Invest" },
   { href: "/manager", label: "Manage" },
 ];

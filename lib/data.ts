@@ -1,9 +1,21 @@
 import projects from "@/data/projects.json";
 import investor from "@/data/investors.json";
 import manager from "@/data/manager.json";
-import type { Commitment, Project } from "@/types";
+import pools from "@/data/pools.json";
+import zakatBeneficiaries from "@/data/zakat-beneficiaries.json";
+import sadaqah from "@/data/sadaqah.json";
+import type {
+  Commitment,
+  Pool,
+  Project,
+  SadaqahProject,
+  ZakatBeneficiary,
+} from "@/types";
 
 const allProjects = projects as Project[];
+const allPools = pools as Pool[];
+const allBeneficiaries = zakatBeneficiaries as ZakatBeneficiary[];
+const allSadaqah = sadaqah as SadaqahProject[];
 const investorData = investor as {
   id: string;
   name: string;
@@ -50,4 +62,20 @@ export function getInvestor() {
 
 export function getProjectTitle(id: string): string {
   return getProject(id)?.title ?? "Unknown project";
+}
+
+export function loadPools(): Pool[] {
+  return allPools;
+}
+
+export function getPool(id: string): Pool | undefined {
+  return allPools.find((p) => p.id === id);
+}
+
+export function loadZakatBeneficiaries(): ZakatBeneficiary[] {
+  return allBeneficiaries;
+}
+
+export function loadSadaqahProjects(): SadaqahProject[] {
+  return allSadaqah;
 }
